@@ -12,6 +12,12 @@ use \App\Item;
         $keyword = request()->keyword;
         $items = [];
         
+        
+if (isset($_POST["test"])) {
+    echo $_POST["test"];
+}
+
+        
         if ($keyword) {
             $client = new \RakutenRws_Client();
             $client->setApplicationId(env('RAKUTEN_APPLICATION_ID'));
