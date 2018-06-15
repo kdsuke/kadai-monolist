@@ -20,12 +20,7 @@ use \App\Item;
                 'imageFlag' => 1,
                 'hits' => 20,
             ]);
-            if ( !isset($_POST['Items']) || $_POST['Items'] == "" ){
-
-  echo '';
-
-}
-
+           
             //Creating "Item" instance to make it easy to handle.（not saving）
             foreach ($rws_response->getData()['Items'] as $rws_item) {
                 $item = new Item();
