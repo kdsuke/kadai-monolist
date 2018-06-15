@@ -13,9 +13,7 @@ use \App\Item;
         $items = [];
         
         
-if (isset($_POST["test"])) {
-    echo $_POST["test"];
-}
+
 
         
         if ($keyword) {
