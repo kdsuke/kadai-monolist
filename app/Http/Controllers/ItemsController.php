@@ -11,6 +11,7 @@ use \App\Item;
     {
         $keyword = request()->keyword;
         $items = [];
+        $null = 'Items';
         if ($keyword) {
             $client = new \RakutenRws_Client();
             $client->setApplicationId(env('RAKUTEN_APPLICATION_ID'));
