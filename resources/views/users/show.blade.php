@@ -15,6 +15,7 @@
                     <div id="want_count" class="status-value">
                         {{ $count_want }}
                     </div>
+                   
                 </li>
                 <li>
                     <div class="status-label">HAVE</div>
